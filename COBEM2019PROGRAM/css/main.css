@@ -1,33 +1,4 @@
-header{
-    float: center;
-}
-body{
-    float: center;
-}
-div{
-    float: center;
-}
-#monday{
-    background-color: #252323;    
-    color: yellow;
-}
-#tuesday{
-    background-color: #252323;    
-    color: yellow;
-}
-#wednesday{
-    background-color: #252323;    
-    color: yellow;
-}
-#thursday{
-    background-color: #252323;    
-    color: yellow;
-}
-#friday{
-    background-color: #252323;    
-    color: yellow;
-}
-h1{
-    text-align: center;
-    font-size: medium;
+.program{
+    border: 3px solid green;
+    height: 100%;
 }
