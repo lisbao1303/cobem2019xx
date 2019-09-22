@@ -1,2 +1,2 @@
-# cobem2019
+# COBEM2019
 diretoria do ti full cabulosa
