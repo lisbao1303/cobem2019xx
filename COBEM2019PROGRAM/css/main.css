@@ -1,4 +1,23 @@
 .program{
-    border: 3px solid green;
-    height: 100%;
+    border: solid black;
+}
+#monday{
+    background-color: #252323;    
+    color: yellow;
+}
+#tuesday{
+    background-color: #252323;    
+    color: yellow;
+}
+#wednesday{
+    background-color: #252323;    
+    color: yellow;
+}
+#thursday{
+    background-color: #252323;    
+    color: yellow;
+}
+#friday{
+    background-color: #252323;    
+    color: yellow;
 }
