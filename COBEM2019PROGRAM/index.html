@@ -1,253 +1,178 @@
 <!DOCTYPE html>
 <html lang="en">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--android-->
+<meta name="theme-color" content="#FFD700">
+<!-- Windows Phone -->
+<meta name="msapplication-navbutton-color" content="#FFD700">
+<!-- iOS Safari -->
+<meta name="apple-mobile-web-app-status-bar-style" content="#FFD700">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="COBEM 2019">
+<meta charset="UTF-8">
 
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="content-type" content="text/html;" />
-	<meta http-equiv="content-type" content="IE=edge">
-	<meta name="keywords" content="tags, do , google" />
-	<meta name="description" content="">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<link rel="stylesheet" href="css/bootstrap.css">
-	<link rel="stylesheet" href="css/font-awesome.css">
-	<link rel="stylesheet" href="css/font-awesome.min.css">
-	<link rel="stylesheet" href="css/open-sans.css">
-	<link rel="stylesheet" href="css/perfect-scrollbar.css">
-	<link rel="stylesheet" href="css/sidebar.css">
-	<link rel="icon" type="imagem/png" href="img/icone.png" />
-	<title>COBEM 2019 Program</title>
+    <title>COBEM 2019</title>
+    <link rel="apple-touch-icon" href="img/icone.png">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="manifest" href="manifest.json">
 </head>
-<script>
-	function executar() {
-		var texto = document.getElementById('texto').value;
-		var lista = document.getElementById('historico');
-		var adicionar = true;
-		var opt = document.createElement('option');
-		for (i = 0; i < lista.options.length; i++) {
-			if (texto == lista.options[i].value) {
-				adicionar = false;
-			}
-		}
-		if (adicionar == true) {
-			opt.value = texto;
-			lista.appendChild(opt);
-		}
-	}
-</script>
 
-<body class="body body-lighten">
-	<header class="program ">
+<body id="body">
+    <header id="header">
+        <div class="menu-toggle"><i class="fa fa-bars" aria-hidden="true"></i></div>
+        <div class="logo">COBEM2019</div>
+        <nav id="navp" class="navp">
+            <ul>
+                <li><a href="#" class="active">HOME</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Team</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!--CONTEUDO DO SITE AQUI-->
+    <div class="conteudo" id="conteudo">
+        <nav>
+            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab"
+                    aria-controls="nav-home" aria-selected="true">Program Agenda</a>
+                <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab"
+                    aria-controls="nav-profile" aria-selected="false">About Uberlândia</a>
+                <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab"
+                    aria-controls="nav-contact" aria-selected="false">Social Agenda</a>
+            </div>
+        </nav>
+        <div class="tab-content" id="nav-tabContent">
+            <div class="tab-pane fade show active" style="align-content: center" id="nav-home" role="tabpanel"
+                aria-labelledby="nav-home-tab" ,>
 
-	</header>
-	<div class="d-flex" id="wrapper">
+                <!--CARDS--DIAS DESEGUNDA A SEXTA-->
+                <div class="d-none d-xl-block d-lg-block d-md-block d-sm-none">
+                    <div class="text-center shadow m-3 bg-white rounded">
+                        <!-- <img class="card-img-top" src=".../100px180/" alt="Imagem de capa do card">-->
+                        <div class="card-body">
+                            <h5 class="card-title">Monday</h5>
+                            <p class="card-text">Um exemplo de texto rápido para construir o título do card e
+                                fazer preencher o conteúdo do card.</p>
+                            <a href="#" class="btn btn-primary">Visitar</a>
+                        </div>
+                    </div>
+                    <div class=" text-center shadow m-3 bg-white rounded">
+                        <!-- <img class="card-img-top" src=".../100px180/" alt="Imagem de capa do card">-->
+                        <div class="card-body">
+                            <h5 class="card-title">Tuesday</h5>
+                            <p class="card-text">Um exemplo de texto rápido para construir o título do card e
+                                fazer preencher o conteúdo do card.</p>
+                            <a href="#" class="btn btn-primary" onclick="">Visitar</a>
+                        </div>
+                    </div>
+                    <div class=" text-center shadow m-3 bg-white rounded">
+                        <!-- <img class="card-img-top" src=".../100px180/" alt="Imagem de capa do card">-->
+                        <div class="card-body">
+                            <h5 class="card-title">Wednesday</h5>
+                            <p class="card-text">Um exemplo de texto rápido para construir o título do card e
+                                fazer preencher o conteúdo do card.</p>
+                            <a href="#" class="btn btn-primary">Visitar</a>
+                        </div>
+                    </div>
+                    <div class=" text-center shadow m-3 bg-white rounded">
+                        <!-- <img class="card-img-top" src=".../100px180/" alt="Imagem de capa do card">-->
+                        <div class="card-body">
+                            <h5 class="card-title">Thursday</h5>
+                            <p class="card-text">Um exemplo de texto rápido para construir o título do card e
+                                fazer preencher o conteúdo do card.</p>
+                            <a href="#" class="btn btn-primary" onclick="">Visitar</a>
+                        </div>
+                    </div>
+                    <div class=" text-center shadow m-3 bg-white rounded">
+                        <!-- <img class="card-img-top" src=".../100px180/" alt="Imagem de capa do card">-->
+                        <div class="card-body">
+                            <h5 class="card-title">Friday</h5>
+                            <p class="card-text">Um exemplo de texto rápido para construir o título do card e
+                                fazer preencher o conteúdo do card.</p>
+                            <a href="#" class="btn btn-primary">Visitar</a>
+                        </div>
+                    </div>
+                </div>
 
-		<!-- sidebar -->
-		<div class="sidebar sidebar-lighten">
+                <div class="d-none d-block d-md-none">
+                    <div class=" text-center shadow m-3 bg-white rounded">
+                        <!-- <img class="card-img-top" src=".../100px180/" alt="Imagem de capa do card">-->
+                        <div class="card-body form-inline">
+                            <h5 class="card-title">Monday</h5>
+                            <a href="#" class="btn btn-primary float-right">Visitar</a>
+                        </div>
+                    </div>
+                    <div class=" text-center shadow m-3 bg-white rounded">
+                        <!-- <img class="card-img-top" src=".../100px180/" alt="Imagem de capa do card">-->
+                        <div class="card-body">
+                            <h5 class="card-title">Tuesday</h5>
+                            <a href="#" class="btn btn-primary" onclick="">Visitar</a>
+                        </div>
+                    </div>
+                    <div class=" text-center shadow m-3 bg-white rounded">
+                        <!-- <img class="card-img-top" src=".../100px180/" alt="Imagem de capa do card">-->
+                        <div class="card-body">
+                            <h5 class="card-title">Wednesday</h5>
+                            <a href="#" class="btn btn-primary">Visitar</a>
+                        </div>
+                    </div>
+                    <div class=" text-center shadow m-3 bg-white rounded">
+                        <!-- <img class="card-img-top" src=".../100px180/" alt="Imagem de capa do card">-->
+                        <div class="card-body">
+                            <h5 class="card-title">Thursday</h5>
+                            <a href="#" class="btn btn-primary" onclick="">Visitar</a>
+                        </div>
+                    </div>
+                    <div class=" text-center shadow m-3 bg-white rounded">
+                        <!-- <img class="card-img-top" src=".../100px180/" alt="Imagem de capa do card">-->
+                        <div class="card-body">
+                            <h5 class="card-title">Friday</h5>
+                            <a href="#" class="btn btn-primary">Visitar</a>
+                        </div>
+                    </div>
+                </div>
 
-			<!-- sidebar menu -->
-			<div class="sidebar-menu">
+            </div>
 
-				<!-- menu -->
-				<ul class="list list-unstyled list-scrollbar">
+        </div>
+    </div>
 
+    <!--SCRIPTS -->
+    <script src="js/jquery-3.4.1.js"></script>
 
-					<!-- multi-level dropdown menu -->
-					<li class="list-item">
-						<p class="list-title text-uppercase">Dashboard</p>
-						<ul class="list-unstyled">
-							<li><a href="#" class="list-link"><span class="list-icon"><i class="fa fa-home"
-											aria-hidden="true"></i></span>Home</a></li>
-							<li><a href="#" class="list-link link-arrow link-current"><span class="list-icon"><i
-											class="fa fa-cog" aria-hidden="true"></i></span>Settings</a>
-								<ul class="list-unstyled list-hidden">
-									<li><a href="#" class="list-link">Timezone</a></li>
-									<li><a href="#" class="list-link">Permissions</a></li>
-									<li><a href="#" class="list-link link-arrow link-current">Maintenance</a>
-										<ul class="list-unstyled list-hidden">
-											<li><a href="#" class="list-link">On</a></li>
-											<li><a href="#" class="list-link ">Off</a></li>
-										</ul>
-									</li>
-								</ul>
-							</li>
-
-							<!-- notice info -->
-							<li><a href="#" class="list-link">Notice</a></li>
-						</ul>
-					</li>
-
-					<!-- multi-level dropdown menu -->
-					<li class="list-item">
-						<p class="list-title text-uppercase">Coments</p>
-						<ul class="list-unstyled">
-							<li><a href="#" class="list-link"><span class="list-icon"><i class="fa fa-plus"
-											aria-hidden="true"></i></span>New</a></li>
-							<li><a href="#" class="list-link link-arrow"><span class="list-icon"><i
-											class="fa fa-comments-o" aria-hidden="true"></i></span>Settings comments</a>
-								<ul class="list-unstyled list-hidden">
-									<li><a href="#" class="list-link">Disable</a></li>
-									<li><a href="#" class="list-link">Enable</a></li>
-								</ul>
-							</li>
-						</ul>
-					</li>
-				</ul>
-			</div>
-		</div>
-
-		<!-- website content -->
-		<div class="content">
-
-			<!-- navbar top fixed -->
-			<nav class="navbar navbar-expand-lg fixed-top navbar-lighten navbar-dark bg-dark">
-
-				<!-- navbar sidebar menu toggle -->
-
-				<span class="navbar-text">
-					<a href="#" id="sidebar-toggle" class="navbar-bars">
-						<i class="fa fa-bars" aria-hidden="true"></i>
-					</a>
-				</span>
-				<div class="title">
-					<h3 class="d-none d-sm-none d-md-block title">COBEM 2019 PROGRAM</h3>
-
-				</div>
-
-
-				<!-- navbar dropdown menu-->
-				<div class="collapse navbar-collapse">
-					<div class="dropdown dropdown-logged dropdown-logged-lighten">
-						<div
-							class="dropdown-menu dropdown-logged-menu dropdown-menu-right border-0 dropdown-menu-lighten">
-							<div class="dropdown-menu-arrow"></div>
-							<a class="dropdown-item dropdown-logged-item" href="#"><i class="fa fa-user-o"
-									aria-hidden="true"></i>Your profile</a>
-							<a class="dropdown-item dropdown-logged-item" href="#"><i class="fa fa-comments-o"
-									aria-hidden="true"></i>Your comments</a>
-							<a class="dropdown-item dropdown-logged-item" href="#"><i class="fa fa-key"
-									aria-hidden="true"></i>Change password</a>
-							<div class="dropdown-divider border-light"></div>
-							<a class="dropdown-item dropdown-logged-item" href="#"><i class="fa fa-sign-out"
-									aria-hidden="true"></i>Logout</a>
-						</div>
-					</div>
-				</div>
-			</nav>
-
-			<!-- content container -->
-			<div class="container-fluid">
-				<div class="tab-content" id="nav-tabContent">
-					<div class="tab-pane fade show active" style="align-content: center" id="nav-home" role="tabpanel"
-						aria-labelledby="nav-home-tab" ,>
-
-						<!--CARDS--DIAS DESEGUNDA A SEXTA-->
-						<div class="d-none d-xl-block d-lg-block d-md-block d-sm-none">
-							<div class="card text-center shadow m-3 bg-white rounded">
-								<!-- <img class="card-img-top" src=".../100px180/" alt="Imagem de capa do card">-->
-								<div class="card-body">
-									<h5 class="card-title">Monday</h5>
-									<p class="card-text">Um exemplo de texto rápido para construir o título do card e
-										fazer preencher o conteúdo do card.</p>
-									<a href="#" class="btn btn-primary">Visitar</a>
-								</div>
-							</div>
-							<div class="card text-center shadow m-3 bg-white rounded">
-								<!-- <img class="card-img-top" src=".../100px180/" alt="Imagem de capa do card">-->
-								<div class="card-body">
-									<h5 class="card-title">Tuesday</h5>
-									<p class="card-text">Um exemplo de texto rápido para construir o título do card e
-										fazer preencher o conteúdo do card.</p>
-									<a href="#" class="btn btn-primary" onclick="">Visitar</a>
-								</div>
-							</div>
-							<div class="card text-center shadow m-3 bg-white rounded">
-								<!-- <img class="card-img-top" src=".../100px180/" alt="Imagem de capa do card">-->
-								<div class="card-body">
-									<h5 class="card-title">Wednesday</h5>
-									<p class="card-text">Um exemplo de texto rápido para construir o título do card e
-										fazer preencher o conteúdo do card.</p>
-									<a href="#" class="btn btn-primary">Visitar</a>
-								</div>
-							</div>
-							<div class="card text-center shadow m-3 bg-white rounded">
-								<!-- <img class="card-img-top" src=".../100px180/" alt="Imagem de capa do card">-->
-								<div class="card-body">
-									<h5 class="card-title">Thursday</h5>
-									<p class="card-text">Um exemplo de texto rápido para construir o título do card e
-										fazer preencher o conteúdo do card.</p>
-									<a href="#" class="btn btn-primary" onclick="">Visitar</a>
-								</div>
-							</div>
-							<div class="card text-center shadow m-3 bg-white rounded">
-								<!-- <img class="card-img-top" src=".../100px180/" alt="Imagem de capa do card">-->
-								<div class="card-body">
-									<h5 class="card-title">Friday</h5>
-									<p class="card-text">Um exemplo de texto rápido para construir o título do card e
-										fazer preencher o conteúdo do card.</p>
-									<a href="#" class="btn btn-primary">Visitar</a>
-								</div>
-							</div>
-						</div>
-
-						<div class="d-none d-block d-md-none">
-							<div class="card text-center shadow m-3 bg-white rounded">
-								<!-- <img class="card-img-top" src=".../100px180/" alt="Imagem de capa do card">-->
-								<div class="card-body form-inline">
-									<h5 class="card-title">Monday</h5>
-									<a href="#" class="btn btn-primary float-right">Visitar</a>
-								</div>
-							</div>
-							<div class="card text-center shadow m-3 bg-white rounded">
-								<!-- <img class="card-img-top" src=".../100px180/" alt="Imagem de capa do card">-->
-								<div class="card-body">
-									<h5 class="card-title">Tuesday</h5>
-									<a href="#" class="btn btn-primary" onclick="">Visitar</a>
-								</div>
-							</div>
-							<div class="card text-center shadow m-3 bg-white rounded">
-								<!-- <img class="card-img-top" src=".../100px180/" alt="Imagem de capa do card">-->
-								<div class="card-body">
-									<h5 class="card-title">Wednesday</h5>
-									<a href="#" class="btn btn-primary">Visitar</a>
-								</div>
-							</div>
-							<div class="card text-center shadow m-3 bg-white rounded">
-								<!-- <img class="card-img-top" src=".../100px180/" alt="Imagem de capa do card">-->
-								<div class="card-body">
-									<h5 class="card-title">Thursday</h5>
-									<a href="#" class="btn btn-primary" onclick="">Visitar</a>
-								</div>
-							</div>
-							<div class="card text-center shadow m-3 bg-white rounded">
-								<!-- <img class="card-img-top" src=".../100px180/" alt="Imagem de capa do card">-->
-								<div class="card-body">
-									<h5 class="card-title">Friday</h5>
-									<a href="#" class="btn btn-primary">Visitar</a>
-								</div>
-							</div>
-						</div>
-
-
-					</div>
-
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<!-- javascript library -->
-	<script src="js/jquery-3.4.1.js"></script>
-	<script src="js/bootstrap.bundle.js"></script>
-	<script src="js/perfect-scrollbar.js"></script>
-	<script src="js/nanobar.js"></script>
-	<script src="js/sidebar.menu.js"></script>
-	<script>
-		$(function () {
-			new PerfectScrollbar('.list-scrollbar');
-			var nanobar = new Nanobar();
-			nanobar.go(100);
-		});
-	</script>
+    <!--SCRIPTS PARA NAVIGATION E REGISTRO DO SERVICE WORKER -->
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.menu-toggle').click(function () {
+                $('#navp').toggleClass('active')
+                $("#conteudo").toggleClass('active');
+            })
+            $('.conteudo').click(function () {
+                var t = $(document).width() + 17;
+                if (t <= 991) {
+                    if ($('#navp').hasClass("active")) {
+                        $('#navp').toggleClass('active');
+                        $("#conteudo").toggleClass('active');
+                    }
+                }
+            })
+        })
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', function () {
+                navigator.serviceWorker.register('sw.js').then(function (registration) {
+                    // Registration was successful
+                    console.log('ServiceWorker registration successful with scope: ', registration.scope);
+                }, function (err) {
+                    // registration failed :(
+                    console.log('ServiceWorker registration failed: ', err);
+                });
+            });
+        }
+    </script>
 </body>
 
 </html>
