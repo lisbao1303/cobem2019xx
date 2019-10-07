@@ -1,0 +1,16 @@
+{
+    "short_name": "COBEM2019",
+    "name": "COBEM 2019 PROGRAM",
+    "description": "25th International Congress of Mechanical Engineering Program",
+    "icons": [
+        {
+            "src": "img/icone.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ],
+    "start_url": ".",
+    "background_color": "#FFFFFF",
+    "display": "standalone",
+    "theme_color": "#FFD700"
+}
