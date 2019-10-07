@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<meta http-equiv="content-type" content="text/html;" />
+<meta http-equiv="content-type" content="IE=edge">
+<meta name="keywords" content="tags, do , google" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--android-->
+<meta name="theme-color" content="#F8F9FA">
+<!-- Windows Phone -->
+<meta name="msapplication-navbutton-color" content="#F8F9FA">
+<!-- iOS Safari -->
+<meta name="apple-mobile-web-app-status-bar-style" content="#F8F9FA">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="COBEM 2019">
+<meta charset="UTF-8">
+
+<head>
+    <title>COBEM 2019</title>
+    <link rel="apple-touch-icon" href="img/icone.png">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</head>
+<script>
+        function executar(){
+        var texto= document.getElementById('texto').value;
+        var lista=document.getElementById('historico');
+        var adicionar=true;
+        var opt= document.createElement('option');
+            for(i=0;i<lista.options.length;i++){
+                if(texto==lista.options[i].value){
+                    adicionar=false;
+                }
+            }
+            if(adicionar==true){
+                opt.value=texto;
+                lista.appendChild(opt);
+            }
+        }
+        
+</script>
+
+<body id="body">
+    <header id="header" class="border fixed-top">
+        <div class="menu-toggle"><i class="fa fa-bars" aria-hidden="false"></i></div>
+        <div class="logo">Cobem 2019</div>
+        <nav id="navp" class="navp border">
+            <ul>
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Team</a></li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-1" type="search" id="texto" list="historico" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit" onclick="executar()">Search</button>
+                    <datalist id="historico">
+                    </datalist>
+            </form>
+        </nav>
+    </header>
+    <!--CONTEUDO DO SITE AQUI-->
+    <div class="conteudo" id="conteudo">
+    
+        <div class="conteiner border">
+        <nav>
+            <div class="d-none d-xl-block d-lg-block d-md-block d-sm-block">
+              <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Program Agenda</a>
+                <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">About Uberlândia</a>
+                <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Social Agenda</a>
+              </div>
+              </div>
+      
+              <div class="d-sm-none d-block">
+                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                  <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Prog. Ag.</a>
+                  <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">About Udi.</a>
+                  <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Soc. Ag.</a>
+                </div>
+                </div>
+      
+          </nav>
+
+          <div class="tab-content" id="nav-tabContent">
+            <div class="tab-pane fade show active" style="align-content: center" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab", >
+                <div class="d-none d-xl-block d-lg-block d-md-block d-sm-none"> 
+                    <div class="card text-center shadow m-3 bg-white rounded" >
+                      <!-- <img class="card-img-top" src=".../100px180/" alt="Imagem de capa do card">-->
+                      <div class="card-body">
+                        <h5 class="card-title">Monday</h5>
+                        <button class="btn btn-primary" id="botao-1">Visit</a>
+                      </div>
+                    </div>
+        
+                    <div class="card text-center shadow m-3 bg-white rounded" >
+                      <!-- <img class="card-img-top" src=".../100px180/" alt="Imagem de capa do card">-->
+                       <div class="card-body">
+                         <h5 class="card-title">Tuesday</h5>
+                         <a href="./dia-2/main-dia.html" class="btn btn-primary" onclick="">Visit</a>
+                       </div>
+                     </div>
+                     
+                     <div class="card text-center shadow m-3 bg-white rounded" >
+                      <!-- <img class="card-img-top" src=".../100px180/" alt="Imagem de capa do card">-->
+                       <div class="card-body">
+                         <h5 class="card-title">Wednesday</h5>
+                         <a href="./dia-3/main-dia.html" class="btn btn-primary">Visit</a>
+                       </div>
+                     </div>
+                     
+                     <div class="card text-center shadow m-3 bg-white rounded" >
+                      <!-- <img class="card-img-top" src=".../100px180/" alt="Imagem de capa do card">-->
+                       <div class="card-body">
+                         <h5 class="card-title">Thursday</h5>
+                         <a href="./dia-4/main-dia.html" class="btn btn-primary" onclick="">Visit</a>
+                       </div>
+                     </div>
+                     
+                     <div class="card text-center shadow m-3 bg-white rounded" >
+                      <!-- <img class="card-img-top" src=".../100px180/" alt="Imagem de capa do card">-->
+                       <div class="card-body">
+                         <h5 class="card-title">Friday</h5>
+                         <a href="./dia-5/main-dia.html" class="btn btn-primary">Visit</a>
+                       </div>
+                     </div>
+                     </div>
+                     
+                     <!-- local principal versao mobile -->
+                     <!-- local principal versao mobile -->
+                     <!-- local principal versao mobile -->
+                     <!-- local principal versao mobile -->
+                     <!-- local principal versao mobile -->
+                     <div class="d-md-none d-block"> 
+                      <div class="card shadow m-3 bg-white rounded" style="height: 5rem" >
+                       <!-- <img class="card-img-top" src=".../100px180/" alt="Imagem de capa do card">-->
+                        <div class="card-body">
+                        <form> 
+                          <div class="form-group row">
+                          <h5 class="card-title col-9">Monday</h5>
+                          <a href="./dia-1/main-dia.html" class="btn btn-primary col-3">Visit</a>
+                         </div>
+                        </form>
+                        </div>
+                      </div>
+                      
+                      <div class="card shadow m-3 bg-white rounded" style="height: 5rem" >
+                          <!-- <img class="card-img-top" src=".../100px180/" alt="Imagem de capa do card">-->
+                           <div class="card-body">
+                           <form> 
+                             <div class="form-group row">
+                             <h5 class="card-title col-9">Tuesday</h5>
+                             <a href="./dia-2/main-dia.html" class="btn btn-primary col-3">Visit</a>
+                            </div>
+                           </form>
+                           </div>
+                         </div>
+                         
+                      <div class="card shadow m-3 bg-white rounded" style="height: 5rem" >
+                            <!-- <img class="card-img-top" src=".../100px180/" alt="Imagem de capa do card">-->
+                             <div class="card-body">
+                             <form> 
+                               <div class="form-group row">
+                               <h5 class="card-title col-9">Wednesday</h5>
+                               <a href="./dia-3/main-dia.html" class="btn btn-primary col-3">Visit</a>
+                              </div>
+                             </form>
+                             </div>
+                           </div>
+                           
+                      <div class="card shadow m-3 bg-white rounded" style="height: 5rem" >
+                              <!-- <img class="card-img-top" src=".../100px180/" alt="Imagem de capa do card">-->
+                               <div class="card-body">
+                               <form> 
+                                 <div class="form-group row">
+                                 <h5 class="card-title col-9">Thursday</h5>
+                                 <a href="./dia-4/main-dia.html" class="btn btn-primary col-3">Visit</a>
+                                </div>
+                               </form>
+                               </div>
+                             </div>
+                             
+                      <div class="card shadow m-3 bg-white rounded" style="height: 5rem" >
+                                <!-- <img class="card-img-top" src=".../100px180/" alt="Imagem de capa do card">-->
+                                 <div class="card-body">
+                                 <form> 
+                                   <div class="form-group row">
+                                   <h5 class="card-title col-9">Friday</h5>
+                                   <a href="./dia-5/main-dia.html" class="btn btn-primary col-3">Visit</a>
+                                   </div>
+                                 </form>
+                                 </div>
+                      </div>
+                    
+                    </div>
+                </div>
+
+            <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" style="height: 85vmin">
+              <div class="conteiner " style="height: 100%">
+                      <style>
+                      #object-tab-3{
+                            width: 100%;
+                            height: 100%;
+                      }    
+                      </style>
+                      <object id="object-tab-3" class="tab3" data="./tab-3-content.html" >
+              </div>
+            </div>
+          
+            <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab" style="height: 85vmin">
+                    <div class="conteiner" style="height: 100%">
+                            <style>
+                            #object-tab-3{
+                                width: 100%;
+                                height: 100%;
+                            }    
+                            </style>
+                            <object id="object-tab-3" class="tab3" data="./tab-3-content.html" >
+                    </div>
+            </div>
+          </div>
+    </div>
+    </div>
+    <!--SCRIPTS -->
+    <script src="js/jquery-3.4.1.js"></script>
+
+    <!--SCRIPTS PARA NAVIGATION E REGISTRO DO SERVICE WORKER -->
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.menu-toggle').click(function () {
+                $('#navp').toggleClass('active')
+                $("#conteudo").toggleClass('active');
+            })
+            $('.conteudo').click(function () {
+                var t = $(document).width() + 17;
+                if (t <= 991) {
+                    if ($('#navp').hasClass("active")) {
+                        $('#navp').toggleClass('active');
+                        $("#conteudo").toggleClass('active');
+                    }
+                }
+            })
+        })
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', function () {
+                navigator.serviceWorker.register('sw.js').then(function (registration) {
+                    // Registration was successful
+                    console.log('ServiceWorker registration successful with scope: ', registration.scope);
+                }, function (err) {
+                    // registration failed :(
+                    console.log('ServiceWorker registration failed: ', err);
+                });
+            });
+        }
+
+        $(document).ready(function () {
+            $("#botao-1").click(function () {
+
+                $(function () {
+                    $("#nav-tabContent").load("./tab-3-content.html");
+                    console.log('certo');
+                });
+            })
+        });
+    </script>
+</body>
+
+</html>
