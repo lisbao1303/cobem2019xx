@@ -1,0 +1,136 @@
+#body{
+    margin:0;
+    padding: 0;
+    font-family: sans-serif;
+}
+#header{
+    position: fixed;
+    top:0;
+    left:0;
+    padding: 0 20px;
+    background: #f8f9fa;
+    width: 100%;
+    height: 70px;
+    box-sizing: border-box;
+}
+.logo
+{
+    color: #333;
+    height: 50%;
+    line-height: 70px;
+    font-size: 24px;
+    float: left;
+    font-weight: bold;
+    padding-left: 20px;
+    font-family: sans-serif;
+}
+#search{
+    position: relative;
+    height: 70px;
+    float: right;
+    
+}
+.navp
+{
+    position: absolute;
+    width: 20%;
+    height: calc(100vh - 70px);
+    background: #f8f9fa;
+    top: 70px;
+    left:0;
+    transition: 0.5s;
+}
+header nav ul{
+    margin: 0;
+    padding: 0;    
+    display: block;
+    text-align: left;
+    border-bottom: 1px solid rgba(0,0,0,.2);
+}
+header nav ul li{
+    list-style: none;
+}
+header nav ul li a{
+    height: 50px;
+    line-height: 50px;
+    padding: 0 20px;
+    color: #333;
+    text-decoration: none;
+    display: block;
+}
+header nav ul li a:hover,
+header nav ul li a.active
+{
+    color: #f8f9fa;
+    background: #333;
+
+}
+.menu-toggle{
+    color: #333;
+    float: left;
+    line-height: 70px;
+    font-size: 24px;
+    cursor: pointer;
+}
+#bt-search{
+    font-size: 24px;
+    
+}
+.navp.active
+    {
+        left: -100%;
+    }
+.conteudo
+    {
+        padding-top: 7vh;
+        padding-left: 20%;
+        transition: 0.5s;
+        z-index: 0;
+    }
+.conteudo.active
+{
+    padding-left: 0;
+}
+
+@media (max-width: 991px)
+{
+    #search{
+        position: relative;
+        height: 70px;
+        
+        float: right;
+        
+    }
+    header
+    {
+        padding: 0 20px;
+    }
+    .menu-toggle
+    {
+        display: block;
+    }
+    .navp {
+        position: absolute;
+        width: 80%;
+        height: calc(100vh - 70px);
+        background: #f8f9fa;
+        top:70px;
+        left:-100%;
+        transition: 0.5s;
+    }
+    .navp.active
+    {
+        left: 0;
+    }
+    header nav ul{
+        display: block;
+        text-align: left;
+        border-bottom: 1px solid rgba(0,0,0,.2);
+    }
+    .conteudo
+    {
+        padding-top: 7vh;
+        padding-left:0;
+    }
+    
+}
